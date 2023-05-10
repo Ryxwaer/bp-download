@@ -1,178 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Survival Game</title>
-    <link rel="icon" type="image/png" href="/favicon.png">
 
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Survival Game</title>
+  <link rel="icon" type="image/png" href="/favicon.png">
 
-    <!-- Custom CSS -->
-    <style>
-      body {
-        background-color: #222222;
-        color: #ffffff;
-      }
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
 
-      .btn-download-current {
-        width: 200px;
-        margin: 10px;
-        padding: 20px;
-        font-size: 24px;
-        border-radius: 10px;
-        background-color: #ff8800;
-        color: #ffffff;
-        transition: background-color 0.3s;
-      }
+  <!-- Custom CSS -->
+  <style>
+    body {
+      background-color: #222222;
+      color: #ffffff;
+    }
 
-      .btn-download-diff {
-        width: 200px;
-        margin: 10px;
-        padding: 10px;
-        font-size: 24px;
-        border-radius: 10px;
-        background-color: #525252;
-        color: #ffffff;
-        transition: background-color 0.3s;
-      }
+    .btn-download-current {
+      width: 200px;
+      margin: 10px;
+      padding: 20px;
+      font-size: 24px;
+      border-radius: 10px;
+      background-color: #ff8800;
+      color: #ffffff;
+      transition: background-color 0.3s;
+    }
 
-      .center {
-        text-align: center;
-      }
+    .btn-download-diff {
+      width: 200px;
+      margin: 10px;
+      padding: 10px;
+      font-size: 24px;
+      border-radius: 10px;
+      background-color: #525252;
+      color: #ffffff;
+      transition: background-color 0.3s;
+    }
 
-      .btn-download-current:hover {
-        background-color: #dd7700;
-      }
+    .center {
+      text-align: center;
+    }
 
-      .btn-download-diff:hover {
-        background-color: #dd7700;
-      }
+    .btn-download-current:hover {
+      background-color: #dd7700;
+    }
 
-      .description {
-        margin-top: 10px;
-        font-size: 18px;
-        height: 100px;
-      }
+    .btn-download-diff:hover {
+      background-color: #dd7700;
+    }
 
-      .title {
-        margin-top: 30px;
-      }
+    .description {
+      margin-top: 10px;
+      font-size: 18px;
+      height: 100px;
+    }
 
-      .footer {
-        text-align: center;
-        color: #525252;
-      }
+    .title {
+      margin-top: 30px;
+    }
 
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <!-- Title -->
-      <div class="row">
-        <div class="col text-center">
-          <h1 class="title">Survival Game</h1>
-        </div>
+    .footer {
+      text-align: center;
+      color: #525252;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <!-- Title -->
+    <div class="row">
+      <div class="col text-center">
+        <h1 class="title">Survival Game</h1>
       </div>
+    </div>
 
-      <!-- Video Trailer -->
-      <div class="row">
-        <div class="col">
-          <div
-            class="embed-responsive embed-responsive-16by9"
-            id="video-trailer"
-          >
-            <iframe
-              class="embed-responsive-item"
-              src="https://www.youtube.com/embed/1KyjUqXoZZo?&autoplay=1&mute=1"
-              allowfullscreen
-              autoplay
-            ></iframe>
-          </div>
-        </div>
-      </div>
-
-      <!-- Download Buttons -->
-      <div class="row center">
-        <div class="col">
-          <span>Downloads:</span>
-          <a
-            href="https://www.dropbox.com/s/3kt2re0q95a1i1d/SurvivalGame_Windows.zip?dl=1"
-            class="btn btn-lg"
-            data-platform="Windows"
-            >Windows</a
-          >
-          <a
-            href="https://www.dropbox.com/s/00pszeyaki61344/SurvivalGame.tar.gz?dl=1"
-            class="btn btn-lg"
-            data-platform="Linux"
-            >Linux</a
-          >
-          <a
-            href="https://www.dropbox.com/s/bnlflb3vprz6jb1/SurvivalGame_MacOS.zip?dl=1"
-            class="btn btn-lg"
-            data-platform="MacOS"
-            >MacOS</a
-          >
-          <a
-            href="https://e.pcloud.link/publink/show?code=XZe7CjZBn6vSkK7aXy9HFFrn6w1dzLjlxeX"
-            class="btn"
-            data-platform="Manual"
-            target="_blank"
-            >User Manual</a
-          >
-        </div>
-      </div>
-
-      <!-- Description -->
-      <div class="row">
-        <div class="col">
-          <ul class="description"></ul>
+    <!-- Video Trailer -->
+    <div class="row">
+      <div class="col">
+        <div class="embed-responsive embed-responsive-16by9" id="video-trailer">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/1KyjUqXoZZo?&autoplay=1&mute=1"
+            allowfullscreen autoplay></iframe>
         </div>
       </div>
     </div>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.3/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Download Buttons -->
+    <div class="row center">
+      <div class="col">
+        <span>Downloads:</span>
+        <a href="https://www.dropbox.com/s/3kt2re0q95a1i1d/SurvivalGame_Windows.zip?dl=1" class="btn btn-lg"
+          data-platform="Windows">Windows</a>
+        <a href="https://www.dropbox.com/s/00pszeyaki61344/SurvivalGame.tar.gz?dl=1" class="btn btn-lg"
+          data-platform="Linux">Linux</a>
+        <a href="https://www.dropbox.com/s/bnlflb3vprz6jb1/SurvivalGame_MacOS.zip?dl=1" class="btn btn-lg"
+          data-platform="MacOS">MacOS</a>
+        <a href="/user_manual.pdf" class="btn"
+          data-platform="Manual" target="_blank">User Manual</a>
+      </div>
+    </div>
 
-    <!-- Custom JS -->
-    <script>
-      var clientPlatform = "";
-      // Map of platform descriptions
-      var platformDescriptions = {
-        Windows: [
-          "Unzip downloaded archive",
-          'Executable is inside "Windows_64bit" as "SurvivalGame.exe"',
-        ],
-        MacOS: [
-          'Make sure Privacy -> Allow apps downloaded from "Anywhere" is checked',
-          "Unzip the aplication and run it",
-        ],
-        Linux: [
-          "Unpack downloaded archive: tar xvzf SurvivalGame.tar.gz",
-          "Make it executable: chmod u+x SurvivalGame.x86_64",
-          "Run it: ./SurvivalGame.x86_64",
-        ],
-        Manual: [
-          "See the user manual for this game",
-          "Controls explained",
-          "Goal of the game explained",
-        ],
-      };
+    <!-- Description -->
+    <div class="row">
+      <div class="col">
+        <ul class="description"></ul>
+      </div>
+    </div>
+  </div>
 
-      $(document).ready(function () {
-        init();
+  <!-- Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-        // Add description on hover
-        $(".btn").hover(function () {
-          var platform = $(this).data("platform");
-          var description = platformDescriptions[platform];
+  <!-- Custom JS -->
+  <script>
+    var clientPlatform = "";
+    // Map of platform descriptions
+    var platformDescriptions = {
+      Windows: [
+        "Unzip downloaded archive",
+        'Executable is inside "Windows_64bit" as "SurvivalGame.exe"',
+      ],
+      MacOS: [
+        'Make sure Privacy -> Allow apps downloaded from "Anywhere" is checked',
+        "Unzip the aplication and run it",
+      ],
+      Linux: [
+        "Unpack downloaded archive: tar xvzf SurvivalGame.tar.gz",
+        "Make it executable: chmod u+x SurvivalGame.x86_64",
+        "Run it: ./SurvivalGame.x86_64",
+      ],
+      Manual: [
+        "See the user manual for this game",
+        "Controls explained",
+        "Goal of the game explained",
+      ],
+    };
+
+    $(document).ready(function () {
+      init();
+
+      // Add description on hover
+      $(".btn").hover(function () {
+        var platform = $(this).data("platform");
+        var description = platformDescriptions[platform];
+        var $list = $(".description");
+
+        // clear existing list items
+        $list.empty();
+
+        // add new list items
+        for (var i = 0; i < description.length; i++) {
+          var listItem = $("<li>").text(description[i]);
+          $list.append(listItem);
+        }
+      });
+    });
+
+    function init() {
+      // Get client platform
+      if (navigator.platform.indexOf("Win") !== -1) {
+        clientPlatform = "Windows";
+      } else if (navigator.platform.indexOf("Mac") !== -1) {
+        clientPlatform = "MacOS";
+      } else {
+        clientPlatform = "Linux";
+      }
+
+      $(".btn").each(function () {
+        if ($(this).data("platform") === clientPlatform) {
+          $(this).addClass("btn-download-current");
+          var description = platformDescriptions[clientPlatform];
           var $list = $(".description");
 
           // clear existing list items
@@ -183,41 +184,15 @@
             var listItem = $("<li>").text(description[i]);
             $list.append(listItem);
           }
-        });
-      });
-
-      function init() {
-        // Get client platform
-        if (navigator.platform.indexOf("Win") !== -1) {
-          clientPlatform = "Windows";
-        } else if (navigator.platform.indexOf("Mac") !== -1) {
-          clientPlatform = "MacOS";
         } else {
-          clientPlatform = "Linux";
+          $(this).addClass("btn-download-diff");
         }
-
-        $(".btn").each(function () {
-          if ($(this).data("platform") === clientPlatform) {
-            $(this).addClass("btn-download-current");
-            var description = platformDescriptions[clientPlatform];
-            var $list = $(".description");
-
-            // clear existing list items
-            $list.empty();
-
-            // add new list items
-            for (var i = 0; i < description.length; i++) {
-              var listItem = $("<li>").text(description[i]);
-              $list.append(listItem);
-            }
-          } else {
-            $(this).addClass("btn-download-diff");
-          }
-        });
-      }
-    </script>
-  </body>
-  <footer class="footer">  
+      });
+    }
+  </script>
+  <footer class="footer">
     Created by: Adam Políček
- </footer>
+  </footer>
+</body>
+
 </html>
